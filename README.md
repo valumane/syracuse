@@ -1,6 +1,7 @@
 # syracuse
 a site to check every number of the syracus conjecture
 
+explaination :
 let a number
 if it is odd, divide it per two
 if it is even, multiply it per three and add one
