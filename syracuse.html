@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>syracuse</title>
     <script src="syracuse.js"></script>
 
 </head>
-<body>
 
-<button onclick="start()">start</button>
+<body onload="document.getElementById('mano').value=''">
+    <button id="start" onclick="start()">start</button>
+    <button id="stop" onclick="stop()">stop</button>
 
-<p id="start"> number study : </p>
-<br>
-<p id="flight" > fly time : </p>
-<p id="longerFlight"> longest fly : </p>
-<p id="flyListLenght">fly list lenght :</p>
-<p id="flyList"> </p>
-<br>
-<p id="now"> operation : </p>
-<br>
-
+    <p>study the first <input onchange="date1();nmax(document.getElementById('mano').value)" id="mano" value=""> number </p>
+    <br>
+    <p id="nbr"> number study : </p>
+    <p id="time"> </p>
+    <p id="timer"> </p>
+    <p id="iterration"> nombre de passage dans la boucle : </p>
+    <br>
+    <p id="flight"> fly time : </p>
+    <p id="longerFlight"> longest fly : </p>
+    <p id="flyListLenght">fly list lenght :</p>
+    <p id="flyList"> </p>
+    <br>
+    <p id="now"> operation : </p>
+    <br>
 
 
 </body>
+
 </html>
