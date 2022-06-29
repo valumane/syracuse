@@ -28,12 +28,12 @@ function go(arg){
         maxnfly = tmp;              //save the current studying number for display it
     }
 
-    //delete the most useless part of the list, to not exceed the limitation of google chrome navigator
-    if (flight[0] !== Math.max(...flight)) { //if the first fly on the list is not the longest, his delete
-        flight.shift()
+    //delete the most useless part of the list, to not exceed the limitation of google chrome navigator (5m itteration)
+    if (flight[0] !== Math.max(...flight)) { //if the first fly tim on the list is not the longest, his delete
+        flight.shift();
     }
-        if (flight[flight.length-1] !== Math.max(...flight)) { //if the last fly on the list is not the longest, his delete
-            flight.pop()
+        if (flight[flight.length-1] !== Math.max(...flight)) { //if the last fly time on the list is not the longest, his delete
+            flight.pop();
         }
 
 
@@ -56,7 +56,7 @@ function increase(c) {
 
 //increase the number studied
 function inc() {
-    tmp += 1;
+    tmp += 1; //change the 1 to the value you want to reach high number quickly
     go(tmp);
 }
 //increase automaticaly
